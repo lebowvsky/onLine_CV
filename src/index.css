@@ -54,7 +54,7 @@ h1 {
 #lateral-menu img {
   width: 65%;
   border-radius: 50%;
-  border: 3px solid rgb(204, 204, 204);
+  border: 3px solid var(--white);
   margin-top: 3vh;
   margin-bottom: 3vh;
   box-shadow: ;
