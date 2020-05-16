@@ -1,20 +1,41 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import React from "react";
+import { useSpring, useTrail, animated, config } from "react-spring";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReact, faNodeJs, faJs } from "@fortawesome/free-brands-svg-icons";
 
 const TitleSpeciality = () => {
+  const fontIcons = [
+    <FontAwesomeIcon className="icons javascript" icon={faJs} />,
+    <FontAwesomeIcon className="icons react" icon={faReact} />,
+    <FontAwesomeIcon className="icons node" icon={faNodeJs} />,
+  ];
+  const iconsStyle = useTrail(fontIcons.length, {
+    transform: "translateY(0)",
+    opacity: 1,
+    from: { transform: "translateY(-5vh)", opacity: 0 },
+    delay: 1300,
+    config: config.wobbly,
+  });
+  const titleStyle = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    delay: 900,
+    config: config.slow,
+  });
   return (
-    <div id="title-speciality" >
-      <h2>
-        Developpeur web & mobile<br/>
+    <div id="title-speciality">
+      <animated.h2 style={titleStyle}>
+        Developpeur web & mobile
+        <br />
         Javascript - React / Node.js
-      </h2>
-      <div>
-        <FontAwesomeIcon className="icons" icon={faReact} />
-        <FontAwesomeIcon className="icons" icon={faNodeJs} />
+      </animated.h2>
+      <div className="icons-container">
+        {iconsStyle.map(({ ...rest }, index) => (
+          <animated.div style={{ ...rest }}>{fontIcons[index]}</animated.div>
+        ))}
       </div>
     </div>
   );
-}
+};
 
 export default TitleSpeciality;
