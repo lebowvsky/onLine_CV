@@ -1,6 +1,5 @@
 import React from "react";
 import { useSpring, animated, config } from "react-spring";
-import LateralLinkcontainer from "../container/LateralLinkContainer";
 
 const Header = () => {
   const props = useSpring({
