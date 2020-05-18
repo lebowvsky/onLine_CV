@@ -22,17 +22,38 @@ const TitleSpeciality = () => {
     delay: 900,
     config: config.slow,
   });
+
+  const curlyLeftStyle = useSpring({
+    opacity: 1,
+    transform: "translateX(0px)",
+    from: { opacity: 0, transform: "translateX(-50px)" },
+    delay: 1300,
+    config: config.slow,
+  });
+
+  const curlyRightStyle = useSpring({
+    opacity: 1,
+    transform: "translateX(0px)",
+    from: { opacity: 0, transform: "translateX(50px)" },
+    delay: 1300,
+    config: config.slow,
+  });
+
   return (
     <div id="title-speciality">
-      <animated.h2 style={titleStyle}>
-        Developpeur web & mobile
-        <br />
-        Javascript - React / Node.js
-      </animated.h2>
-      <div className="icons-container">
-        {iconsStyle.map(({ ...rest }, index) => (
-          <animated.div style={{ ...rest }}>{fontIcons[index]}</animated.div>
-        ))}
+      <div className="title-container">
+        <animated.p style={curlyLeftStyle} className="curly-left">&#123;</animated.p>
+        <animated.h2 style={titleStyle}>
+          Developpeur web &#38; mobile
+          <br />
+          Javascript - React / Node.js
+        </animated.h2>
+        <div className="icons-container">
+          {iconsStyle.map(({ ...rest }, index) => (
+            <animated.div style={{ ...rest }}>{fontIcons[index]}</animated.div>
+          ))}
+        </div>
+        <animated.p style={curlyRightStyle} className="curly-right">&#125;</animated.p>
       </div>
     </div>
   );
