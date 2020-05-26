@@ -50,7 +50,7 @@ const TitleSpeciality = () => {
         </animated.h2>
         <div className="icons-container">
           {iconsStyle.map(({ ...rest }, index) => (
-            <animated.div style={{ ...rest }}>{fontIcons[index]}</animated.div>
+            <animated.div key={index} style={{ ...rest }}>{fontIcons[index]}</animated.div>
           ))}
         </div>
         <animated.p style={curlyRightStyle} className="curly-right">&#125;</animated.p>
