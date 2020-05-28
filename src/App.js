@@ -1,11 +1,11 @@
 import React from 'react';
-import LateralMenu from './components/LateralMenu';
+import Header from './components/Header';
 import MainContent from './container/MainContent';
 
 function App () {
   return (
     <div className='App'>
-      <LateralMenu />
+      <Header />
       <MainContent />
     </div>
   );

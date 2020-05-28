@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Arsenic Cocktail",
+    "imgsrc": "cocktail-192x192.png",
+    "imgalt": "Cocktail icon",
+    "link": "https://keen-franklin-d59dac.netlify.app/",
+    "text": "Site responsive permettant à son utilisateur de créer aléatoirement des cocktails via une API. Il est possible de choisir grâce à des curseurs le nombre d'alcools et le nombre de softs. Les cocktails préférés peuvent être gardés en favoris."
+  },
+  {
+    "title": "Teleport-me",
+    "imgsrc": "teleport_me.jpg",
+    "imgalt": "Cocktail icon",
+    "link": "https://teleport-me-hackathon.netlify.app/",
+    "text": "Réalisation lors d'un Hackathon de 30 heures, d'un site, avec API imposées, dont le sujet était : 'Voyager de chez soi'"
+  },
+  {
+    "title": "Planetarium",
+    "imgsrc": "planetarium.jpg",
+    "imgalt": "Cocktail icon",
+    "link": "https://lebowvsky.github.io/projet-planetarium/accueil.html",
+    "text": "1er projet à la Wild Code School: Réalisation d'un site fictif et responsive pour le planétarium de Nantes."
+  },
+  {
+    "title": "KnitFinland.com",
+    "imgsrc": "knitfinland_300x158.png",
+    "imgalt": "Cocktail icon",
+    "link": "https://www.knitfinland.com/",
+    "text": "Site présentant une artiste qui réalise des œuvres au crochet."
+  }
+]
