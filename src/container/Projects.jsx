@@ -12,6 +12,7 @@ const Projects = () => {
           imgsrc={elt.imgsrc}
           imgalt={elt.imgalt}
           text={elt.text}
+          link={elt.link}
         />
       ))}
     </div>
