@@ -1,5 +1,6 @@
 import React from "react";
 import { useSpring, animated, config } from "react-spring";
+import FontAwesomeCpnt from "./FontAwesomeCpnt";
 
 const Header = () => {
   const props = useSpring({
@@ -31,6 +32,7 @@ const Header = () => {
           <br /> Le Gallo-Tastet
         </h1>
       </animated.div>
+      <FontAwesomeCpnt />
     </animated.header>
   );
 };
