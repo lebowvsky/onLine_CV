@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFreeCodeCamp, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-const LateralLinkcontainer = () => {
+const FontAwesomeCpnt = () => {
   return (
     <ul>
       <li><a href="https://github.com/lebowvsky"><FontAwesomeIcon icon={faGithub} /></a></li>
@@ -13,4 +13,4 @@ const LateralLinkcontainer = () => {
   );
 }
 
-export default LateralLinkcontainer;
+export default FontAwesomeCpnt;
