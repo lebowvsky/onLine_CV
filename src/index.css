@@ -2,6 +2,7 @@
   --light-grey: rgb(77, 77, 77);
   --dark-grey: rgb(51, 51, 51);
   --orange: rgb(242, 163, 65);
+  --orange-hover: rgba(242, 163, 65, 0.1);
   --white: rgb(212, 212, 212);
   --white-hover: rgba(212, 212, 212, 0.2);
   --javascript-yellow: #f7df1e;
@@ -16,9 +17,18 @@
   --h1-font-size: 1.7rem;
   --h2-font-size: 2rem;
   --h3-font-size: 1.5rem;
+  --p-font-size: 1rem;
   --li-lateral-font-size: 1.2rem;
   --fontawesomes-font-size: 1.6rem;
   --curly-font-size: 14rem;
+
+  --h1-font-size-mobile: 1.5rem;
+  --h2-font-size-mobile: 1.5rem;
+  --h3-font-size-mobile: 1.2rem;
+  --p-font-size-mobile: 0.8rem;
+  --li-lateral-font-size-mobile: 1.2rem;
+  --fontawesomes-font-size-mobile: 1.6rem;
+  --curly-font-size-mobile: 12rem;
 
   --header-height: 150px;
   --header-img-height: 150px;
@@ -31,6 +41,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Teko:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +54,9 @@ body {
   color: var(--white);
 }
 
-
+p {
+  font-size: var(--p-font-size);
+}
 
 /* ------------------HEADER--------------------- */
 #my-name {
@@ -182,7 +195,7 @@ h1 {
 
 #projects article {
   position: relative;
-  border-bottom: 1px solid var(--orange);
+  border-bottom: 1px solid var(--white);
   min-height: 20vh;
   display: flex;
   justify-content: space-between;
@@ -198,7 +211,7 @@ article .text-project {
   width: 60%;
   min-height: 100%;
   overflow: scroll;
-  background-color: var(--orange);
+  background-color: var(--white);
   clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
   padding: 2% 2% 2% 10%;
   display: flex;
@@ -220,13 +233,58 @@ article .text-project a {
   height: 50px;
   width: 50px;
   margin: auto;
-  border: 2px solid var(--white);
-  color: var(--white);
+  border: 2px solid var(--orange);
+  color: var(--orange);
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
 }
 
 .text-project a:hover {
-  background-color: var(--white-hover);
+  background-color: var(--orange-hover);
+}
+
+
+
+@media screen and (min-width: 920px) and (max-width: 1500px) {
+
+  p {
+    font-size: var(--p-font-size-mobile);
+  }
+
+  /* --------------------------Main--------------------- */
+  #main #title-speciality {
+    width: 100%;
+    height: var(--title-specialities-height);
+    margin-top: var(--title-specialities-margin-top);
+    display: grid;
+    grid-template-columns: 100%;
+    align-content: center;
+    justify-items: center;
+    font-size: var(--h2-font-size-mobile);
+    font-family: var(--h2-font-style);
+  }
+
+  .curly-left, .curly-right {
+    font-size: var(--curly-font-size-mobile);
+  }
+
+  /* Projects */
+
+  #projects {
+    min-height: 100vh;
+    padding-top: var(--header-height);
+    grid-template-columns: 42% 42%;
+    gap: 5%;
+  }
+
+  #projects article img {
+    max-width: 35%;
+    align-self: center;
+  }
+
+  #projects article {
+    min-height: 30vh;
+  }
+
 }
