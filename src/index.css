@@ -246,7 +246,7 @@ article .text-project a {
 
 
 
-@media screen and (min-width: 920px) and (max-width: 1500px) {
+@media screen and (min-width: 800px) and (max-width: 1600px) {
 
   p {
     font-size: var(--p-font-size-mobile);
