@@ -1,6 +1,7 @@
 import React from "react";
 import { useSpring, animated, config } from "react-spring";
 import FontAwesomeCpnt from "./FontAwesomeCpnt";
+import myImage from '../images/perso_low_res_square.jpg';
 
 const Header = () => {
   const props = useSpring({
@@ -23,7 +24,7 @@ const Header = () => {
       <animated.img
         style={animationImage}
         id="header-img"
-        src="https://media-exp1.licdn.com/dms/image/C5603AQGUnA3evMrdrw/profile-displayphoto-shrink_200_200/0?e=1593043200&v=beta&t=0iBWyoQyHC2TX0SLhfw8Ip4dFSATgI26-6T3ECe-BxI"
+        src={myImage}
         alt="moi"
       />
       <animated.div id="my-name" style={props}>
