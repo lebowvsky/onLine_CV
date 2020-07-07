@@ -1,0 +1,22 @@
+[
+  {
+    "imgsrc": "cnes.jpg",
+    "imgsrcmob": "cnes_mob.jpg",
+    "imgAlt": "Lorem Ipsum"
+  },
+  {
+    "imgsrc": "lemurien.jpg",
+    "imgsrcmob": "lemurien_mob.jpg",
+    "imgAlt": "Lorem Ipsum"
+  },
+  {
+    "imgsrc": "movie.jpg",
+    "imgsrcmob": "movie_mob.jpg",
+    "imgAlt": "Lorem Ipsum"
+  },
+  {
+    "imgsrc": "meteo.jpg",
+    "imgsrcmob": "meteo_mob.jpg",
+    "imgAlt": "Lorem Ipsum"
+  }
+]

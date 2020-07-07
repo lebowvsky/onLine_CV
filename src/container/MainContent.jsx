@@ -2,6 +2,7 @@ import React from "react";
 import TitleSpeciality from "../components/TitleSpeciality";
 import Projects from "./Projects";
 import Technos from "./Technos";
+import Hobbies from "./Hobbies";
 
 const MainContent = () => {
   
@@ -10,6 +11,7 @@ const MainContent = () => {
       <TitleSpeciality />
       <Projects />
       <Technos />
+      <Hobbies />
     </main>
   );
 };

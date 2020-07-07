@@ -9,10 +9,10 @@
   --react-blue: #61dafb;
   --node-green: #689f63;
 
-  --Monserrat: 'Montserrat', sans-serif;
-  --poiret-one: 'Poiret One', cursive;
-  --bebas-font-style: 'Bebas Neue', 'Teko', sans-serif;
-  --h2-font-style: 'Bebas Neue', 'Teko', sans-serif;
+  --Monserrat: "Montserrat", sans-serif;
+  --poiret-one: "Poiret One", cursive;
+  --bebas-font-style: "Bebas Neue", "Teko", sans-serif;
+  --h2-font-style: "Bebas Neue", "Teko", sans-serif;
 
   --h1-font-size: 1.7rem;
   --h2-font-size: 2rem;
@@ -46,12 +46,10 @@
 
   --title-specialities-height: calc(100vh - var(--header-height));
   --title-specialities-margin-top: var(--header-height);
-
-
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Teko:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
   margin: 0;
@@ -149,9 +147,8 @@ h1 {
   width: 40vw;
 }
 
-
-
-.curly-left, .curly-right {
+.curly-left,
+.curly-right {
   position: absolute;
   font-size: var(--curly-font-size);
   font-family: var(--bebas-font-style);
@@ -275,10 +272,48 @@ article .text-project a {
   justify-content: space-evenly;
 }
 
+/* Hobbies */
+#hobbies {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  align-content: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  column-gap: 10%;
+}
+
+#icon-adobe {
+  position: relative;
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#icon-adobe img {
+  position: relative;
+  height: 80px;
+}
+
+#photo {
+  position: relative;
+  width: 30vw;
+  height: 30vh;
+}
+
+#photo img {
+  height: 30vh;
+  border: 10px solid var(--white);
+  -webkit-box-shadow: 4px 4px 13px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 4px 4px 13px 0px rgba(0,0,0,0.5);
+box-shadow: 4px 4px 13px 0px rgba(0,0,0,0.5);
+}
 
 /* ------------------------------------------------1216 TO 1600------------------------------------------------ */
 @media screen and (min-width: 1216px) and (max-width: 1600px) {
-
   p {
     font-size: var(--p-font-size-medium);
   }
@@ -302,7 +337,8 @@ article .text-project a {
     font-family: var(--h2-font-style);
   }
 
-  .curly-left, .curly-right {
+  .curly-left,
+  .curly-right {
     font-size: var(--curly-font-size-medium);
   }
 
@@ -323,6 +359,8 @@ article .text-project a {
   #projects article {
     min-height: 30vh;
   }
+
+  /* Hobbies */
 
 }
 
@@ -353,7 +391,8 @@ article .text-project a {
     width: 55vw;
   }
 
-  .curly-left, .curly-right {
+  .curly-left,
+  .curly-right {
     font-size: var(--curly-font-size-mobile);
   }
 
@@ -374,9 +413,20 @@ article .text-project a {
   #projects article {
     min-height: 30vh;
   }
+
+  /* Hobbies */
+
+  #photo {
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+  }
+  
+  #photo img {
+    height: 25vh;
+  }
 }
 
 /* ------------------------------------------------100 TO 800------------------------------------------------ */
 @media screen and (min-width: 800px) and (max-width: 1216px) {
-
 }
