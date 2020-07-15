@@ -15,17 +15,19 @@ const Hobbies = () => {
   const psd = React.createRef();
 
   useEffect(() => {
-    gsap.from(".icons-adobe", {
-      scrollTrigger: {
-        trigger: "#hobbies",
-        start: "top center",
-        toggleActions: "restart none none none",
-      },
-      duration: 0.5,
-      y: -100,
-      opacity: 0,
-      stagger: 0.2
-    }).delay(1);
+    gsap
+      .from(".icons-adobe", {
+        scrollTrigger: {
+          trigger: "#hobbies",
+          start: "top center",
+          toggleActions: "restart none none none",
+        },
+        duration: 0.5,
+        y: -100,
+        opacity: 0,
+        stagger: 0.2,
+      })
+      .delay(1);
   });
 
   useEffect(() => {
@@ -35,14 +37,14 @@ const Hobbies = () => {
         start: "top 80%",
         toggleActions: "restart none none none",
       },
-      duration: 0.750,
+      duration: 0.75,
       x: -1500,
       stagger: 0.2,
     });
   });
 
   return (
-    <div id="hobbies" style={{borderTop: "1px solid white"}}>
+    <div id="hobbies">
       <div id="icon-adobe">
         <img
           className="icons-adobe"
