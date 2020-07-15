@@ -207,7 +207,7 @@ h1 {
   min-height: 30vh;
   display: flex;
   justify-content: space-between;
-  color: var(--light-grey);
+  color: var(--dark-grey);
 }
 
 #projects article img {
@@ -307,9 +307,9 @@ article .text-project a {
 #photo img {
   height: 30vh;
   border: 10px solid var(--white);
-  -webkit-box-shadow: 4px 4px 13px 0px rgba(0,0,0,0.5);
--moz-box-shadow: 4px 4px 13px 0px rgba(0,0,0,0.5);
-box-shadow: 4px 4px 13px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 4px 4px 13px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 4px 13px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 13px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* ------------------------------------------------1216 TO 1600------------------------------------------------ */
@@ -361,7 +361,13 @@ box-shadow: 4px 4px 13px 0px rgba(0,0,0,0.5);
   }
 
   /* Hobbies */
+  #icon-adobe img {
+    height: 65px;
+  }
 
+  #photo img {
+    height: 25vh;
+  }
 }
 
 /* ------------------------------------------------800 TO 1216------------------------------------------------ */
@@ -415,15 +421,29 @@ box-shadow: 4px 4px 13px 0px rgba(0,0,0,0.5);
   }
 
   /* Hobbies */
+  #hobbies {
+    grid-template-columns: 20% 55%;
+    align-content: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    column-gap: 10%;
+  }
 
-  #photo {
-    position: relative;
+  #icon-adobe {
     width: 30vw;
     height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
-  
+
+  #icon-adobe img {
+    height: 50px;
+  }
+
   #photo img {
-    height: 25vh;
+    height: 20vh;
   }
 }
 
