@@ -17,7 +17,7 @@ const Hobbies = () => {
   useEffect(() => {
     gsap.from(".icons-adobe", {
       scrollTrigger: {
-        trigger: ".photoCard",
+        trigger: "#hobbies",
         start: "top center",
         toggleActions: "restart none none none",
       },
@@ -31,8 +31,8 @@ const Hobbies = () => {
   useEffect(() => {
     gsap.from(".photoCard", {
       scrollTrigger: {
-        trigger: ".photoCard",
-        start: "top center",
+        trigger: "#hobbies",
+        start: "top 80%",
         toggleActions: "restart none none none",
       },
       duration: 0.750,
@@ -42,7 +42,7 @@ const Hobbies = () => {
   });
 
   return (
-    <div id="hobbies">
+    <div id="hobbies" style={{borderTop: "1px solid white"}}>
       <div id="icon-adobe">
         <img
           className="icons-adobe"
